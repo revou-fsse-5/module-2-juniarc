@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Movie Fiesta is a website to fulfil RevoU assignment module-1">
+    <meta name="author" content="Cahya Juniar">
+    <title>Movie Fiesta</title>
+
+    <!-- Style CSS -->
+     <link rel="stylesheet" href="style.css">
+
+     <!-- Bevan Font -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Bevan:ital@0;1&display=swap" rel="stylesheet">
+
+     <!-- Open Sans Font -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Bevan:ital@0;1&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+     <!-- Fontawesome icons -->
+     <script src="https://kit.fontawesome.com/c8ec4a72be.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-left-session">
+            <h1 class="web-title">Movie Fiesta</h1>
+        </div>
+        <div class="header-right-session">
+            <button class="search-btn" id="searchBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <button class="burger-btn" id="burgerBtn"><i class="fa-solid fa-bars"></i></button>
+            <nav class="header-navigation" id="headerNavigation">
+                <button id="closeBtn" class="close-btn"><i class="fa-solid fa-xmark"></i></button>
+                <ul class="nav-list">
+                    <li class="nav-home-container">
+                        <i class="fa-solid fa-house"></i>
+                        <a href="/" class="nav-home">Home</a>
+                    </li>
+                    <li class="nav-movies-container">
+                        <i class="fa-solid fa-film"></i>
+                        <a href="#" class="nav-movies">Movies</a>
+                    </li>
+                    <li class="nav-tv-shows-container">
+                        <i class="fa-solid fa-clapperboard"></i>
+                        <a href="#" class="nav-tv-shows">TV Shows</a>
+                    </li>
+                    <li class="nav-wathclist-container">
+                        <i class="fa-solid fa-bookmark"></i>
+                        <a href="#" class="nav-watchlists">Watchlists</a>
+                    </li>
+                    <li class="nav-signup-container">
+                        <button class="signup-btn" id="signupBtn">
+                            <i class="fa-solid fa-user"></i>
+                            <p class="nav-signup">Sign Up</p>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="search-nav" id="searchNav">
+            <form class="search-form" role="search" id="searchForm">
+                <input type="search" id="searchInput" class="search-input" aria-label="Search Movie" placeholder="Search Movie">
+                <button type="submit" id="btnFind" class="btn-find" aria-label="Find movie">Find</button>
+            </form>
+        </div>
+    </header>
+    <main>
+        <article class="hero-element">
+            <div class="hero-left-container">
+                <p class="hero-text-title">Discovering Your Desire <span class="colored-text">Movies</span> </p>
+                <p class="hero-text-desc">From iconic classics to hidden gems, find the perfect movie for every mood and
+                    moment. Start your cinematic journey now.</p>
+            </div>
+            <div class="hero-right-container">
+                <picture>
+                    <source media="(max-width: 393px)" srcset="./assets/hero-element-medium.png">
+                    <source media="(min-width: 843px)" srcset="./assets/hero-element-large.png">
+                    <img class="hero-img" src="./assets/hero-element-medium.png" alt="Hero image">
+                </picture>
+            </div>
+            <div class="circle-1"></div>
+            <div class="circle-2"></div>
+            <div class="circle-3"></div>
+            <div class="circle-4"></div>
+            <div class="circle-5"></div>
+        </article>
+        <article class="main-content">
+            <section class="in-theater-container">
+                <div class="in-theater-header">
+                    <div class="in-theater-header-left">
+                        <h2>In <span class="colored-text">Theaters</span></h2>
+                    </div>
+                    <div class="in-theater-header-right">
+                        <a href="#" class="see-all-text">See all</a>
+                    </div>
+                </div>
+                <div class="in-theater-body">
+                    <div class="item-container">
+                        <img class="item-img"
+                            src="https://media.21cineplex.com/webcontent/gallery/pictures/171568364064317_287x421.jpg"
+                            alt="how to make millions before grandma dies">
+                        <div class="item-text-content">
+                            <h3 class="item-title">How to Make Millions Before Grandma Dies</h3>
+                            <div class="rating-container">
+                                <i class="fa-solid fa-star"></i>
+                                <p class="rating-text">8.4</p>
+                            </div>
+                        </div>
+                        <div class="add-watchlist-container">
+                            <i class="fa-solid fa-plus"></i>
+                            <p class="add-watchlist-text">Watchlist</p>
+                        </div>
+                        <div class="trailer-container">
+                            <i class="fa-solid fa-play"></i>
+                            <p class="trailer-text">Trailer</p>
+                        </div>
+                    </div>
+                    <div class="item-container">
+                        <img class="item-img"
+                            src="https://media.21cineplex.com/webcontent/gallery/pictures/171706414775783_290x426.jpg"
+                            alt="Inside Out 2 Poster">
+                        <div class="item-text-content">
+                            <h3 class="item-title">Inside Out 2</h3>
+                            <div class="rating-container">
+                                <i class="fa-solid fa-star"></i>
+                                <p class="rating-text">8.2</p>
+                            </div>
+                        </div>
+                        <div class="add-watchlist-container">
+                            <i class="fa-solid fa-plus"></i>
+                            <p class="add-watchlist-text">Watchlists</p>
+                        </div>
+                        <div class="trailer-container">
+                            <i class="fa-solid fa-play"></i>
+                            <p class="trailer-text">Trailer</p>
+                        </div>
+                    </div>
+                    <div class="item-container">
+                        <img class="item-img"
+                            src="https://m.media-amazon.com/images/M/MV5BNDRjYTA2MzgtYWI3My00YmFjLTk1MjgtYTkwZDkyMzg1OWVjXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+                            alt="Ipar Adalah Maut Poster">
+                        <div class="item-text-content">
+                            <h3 class="item-title">Ipar Adalah Maut</h3>
+                            <div class="rating-container">
+                                <i class="fa-solid fa-star"></i>
+                                <p class="rating-text">8.9</p>
+                            </div>
+                        </div>
+                        <div class="add-watchlist-container">
+                            <i class="fa-solid fa-plus"></i>
+                            <p class="add-watchlist-text">Watchlists</p>
+                        </div>
+                        <div class="trailer-container">
+                            <i class="fa-solid fa-play"></i>
+                            <p class="trailer-text">Trailer</p>
+                        </div>
+                    </div>
+                    <div class="item-container">
+                        <img class="item-img"
+                            src="https://media.21cineplex.com/webcontent/gallery/pictures/171697791215350_290x426.jpg"
+                            alt="Bad Boys: Ride or Die poster">
+                        <div class="item-text-content">
+                            <h3 class="item-title">Bad Boys: Ride or Die</h3>
+                            <div class="rating-container">
+                                <i class="fa-solid fa-star"></i>
+                                <p class="rating-text">7.0</p>
+                            </div>
+                        </div>
+                        <div class="add-watchlist-container">
+                            <i class="fa-solid fa-plus"></i>
+                            <p class="add-watchlist-text">Watchlists</p>
+                        </div>
+                        <div class="trailer-container">
+                            <i class="fa-solid fa-play"></i>
+                            <p class="trailer-text">Trailer</p>
+                        </div>
+                    </div>
+                    <div class="item-container">
+                        <img class="item-img"
+                            src="https://media.21cineplex.com/webcontent/gallery/pictures/171567210358448_290x426.jpg"
+                            alt="My Boo Poster">
+                        <div class="item-text-content">
+                            <h3 class="item-title">Haikyuu!! The Dumpster Battle</h3>
+                            <div class="rating-container">
+                                <i class="fa-solid fa-star"></i>
+                                <p class="rating-text">7.4</p>
+                            </div>
+                        </div>
+                        <div class="add-watchlist-container">
+                            <i class="fa-solid fa-plus"></i>
+                            <p class="add-watchlist-text">Watchlist</p>
+                        </div>
+                        <div class="trailer-container">
+                            <i class="fa-solid fa-play"></i>
+                            <p class="trailer-text">Trailer</p>
+                        </div>
+                    </div>
+                    <div class="item-container">
+                        <img class="item-img"
+                            src="https://m.media-amazon.com/images/M/MV5BMjA5Yjg1YTQtYzA5ZS00ZWNjLTkwNjYtOTE5MzQwZDM4YmIwXkEyXkFqcGdeQXVyMTEzMTI1Mjk3._V1_FMjpg_UX1000_.jpg"
+                            alt="Shin Jigen! Crayon Shin-can The Movie Poster">
+                        <div class="item-text-content">
+                            <h3 class="item-title">Shin Jigen! Crayon Shin-can The Movie</h3>
+                            <div class="rating-container">
+                                <i class="fa-solid fa-star"></i>
+                                <p class="rating-text">6.5</p>
+                            </div>
+                        </div>
+                        <div class="add-watchlist-container">
+                            <i class="fa-solid fa-plus"></i>
+                            <p class="add-watchlist-text">Watchlist</p>
+                        </div>
+                        <div class="trailer-container">
+                            <i class="fa-solid fa-play"></i>
+                            <p class="trailer-text">Trailer</p>
+                        </div>
+                    </div>
+                    <div class="item-container">
+                        <img class="item-img"
+                            src="https://media.21cineplex.com/webcontent/gallery/pictures/171810847663231_405x594.jpg"
+                            alt="My Boo Poster">
+                        <div class="item-text-content">
+                            <h3 class="item-title">My Boo</h3>
+                            <div class="rating-container">
+                                <i class="fa-solid fa-star"></i>
+                                <p class="rating-text">7.4</p>
+                            </div>
+                        </div>
+                        <div class="add-watchlist-container">
+                            <i class="fa-solid fa-plus"></i>
+                            <p class="add-watchlist-text">Watchlist</p>
+                        </div>
+                        <div class="trailer-container">
+                            <i class="fa-solid fa-play"></i>
+                            <p class="trailer-text">Trailer</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="top-ten-container">
+                <div class="top-ten-header">
+                    <div class="top-ten-header-left">
+                        <h2><span span class="colored-text">Top 10</span> This Week</h2>
+                    </div>
+                    <div class="top-ten-header-right">
+                        <a href="#" class="see-all-text">See all</a>
+                    </div>
+                </div>
+                <div class="top-ten-body">
+                    <div class="item-container">
+                        <img class="item-img"
+                            src="https://m.media-amazon.com/images/M/MV5BNDRjYTA2MzgtYWI3My00YmFjLTk1MjgtYTkwZDkyMzg1OWVjXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+                            alt="Ipar Adalah Maut Poster">
+                        <div class="item-text-content">
+                            <h3 class="item-title">Ipar Adalah Maut</h3>
+                            <div class="rating-container">
+                                <i class="fa-solid fa-star"></i>
+                                <p class="rating-text">8.9</p>
+                            </div>
+                        </div>
+                        <div class="add-watchlist-container">
+                            <i class="fa-solid fa-plus"></i>
+                            <p class="add-watchlist-text">Watchlists</p>
+                        </div>
+                        <div class="trailer-container">
+                            <i class="fa-solid fa-play"></i>
+                            <p class="trailer-text">Trailer</p>
+                        </div>
+                    </div>
+                    <div class="item-container">
+                        <img class="item-img"
+                            src="https://media.21cineplex.com/webcontent/gallery/pictures/171568364064317_287x421.jpg"
+                            alt="how to make millions before grandma dies">
+                        <div class="item-text-content">
+                            <h3 class="item-title">How to Make Millions Before Grandma Dies</h3>
+                            <div class="rating-container">
+                                <i class="fa-solid fa-star"></i>
+                                <p class="rating-text">8.4</p>
+                            </div>
+                        </div>
+                        <div class="add-watchlist-container">
+                            <i class="fa-solid fa-plus"></i>
+                            <p class="add-watchlist-text">Watchlist</p>
+                        </div>
+                        <div class="trailer-container">
+                            <i class="fa-solid fa-play"></i>
+                            <p class="trailer-text">Trailer</p>
+                        </div>
+                    </div>
+                    <div class="item-container">
+                        <img class="item-img"
+                            src="https://media.21cineplex.com/webcontent/gallery/pictures/171706414775783_290x426.jpg"
+                            alt="Inside Out 2 Poster">
+                        <div class="item-text-content">
+                            <h3 class="item-title">Inside Out 2</h3>
+                            <div class="rating-container">
+                                <i class="fa-solid fa-star"></i>
+                                <p class="rating-text">8.2</p>
+                            </div>
+                        </div>
+                        <div class="add-watchlist-container">
+                            <i class="fa-solid fa-plus"></i>
+                            <p class="add-watchlist-text">Watchlist</p>
+                        </div>
+                        <div class="trailer-container">
+                            <i class="fa-solid fa-play"></i>
+                            <p class="trailer-text">Trailer</p>
+                        </div>
+                    </div>
+                    <div class="item-container">
+                        <img class="item-img"
+                            src="https://media.21cineplex.com/webcontent/gallery/pictures/171567210358448_290x426.jpg"
+                            alt="Haikyuu!! The Dumpster Battle Poster">
+                        <div class="item-text-content">
+                            <h3 class="item-title">Haikyuu!! The Dumpster Battle</h3>
+                            <div class="rating-container">
+                                <i class="fa-solid fa-star"></i>
+                                <p class="rating-text">7.4</p>
+                            </div>
+                        </div>
+                        <div class="add-watchlist-container">
+                            <i class="fa-solid fa-plus"></i>
+                            <p class="add-watchlist-text">Watchlist</p>
+                        </div>
+                        <div class="trailer-container">
+                            <i class="fa-solid fa-play"></i>
+                            <p class="trailer-text">Trailer</p>
+                        </div>
+                    </div>
+                    <div class="item-container">
+                        <img class="item-img"
+                            src="https://media.21cineplex.com/webcontent/gallery/pictures/171810847663231_405x594.jpg"
+                            alt="My Boo Poster">
+                        <div class="item-text-content">
+                            <h3 class="item-title">My Boo</h3>
+                            <div class="rating-container">
+                                <i class="fa-solid fa-star"></i>
+                                <p class="rating-text">7.4</p>
+                            </div>
+                        </div>
+                        <div class="add-watchlist-container">
+                            <i class="fa-solid fa-plus"></i>
+                            <p class="add-watchlist-text">Watchlist</p>
+                        </div>
+                        <div class="trailer-container">
+                            <i class="fa-solid fa-play"></i>
+                            <p class="trailer-text">Trailer</p>
+                        </div>
+                    </div>
+                    <div class="item-container">
+                        <img class="item-img"
+                            src="https://media.21cineplex.com/webcontent/gallery/pictures/171697791215350_290x426.jpg"
+                            alt="Bad Boys: Ride or Die poster">
+                        <div class="item-text-content">
+                            <h3 class="item-title">Bad Boys: Ride or Die</h3>
+                            <div class="rating-container">
+                                <i class="fa-solid fa-star"></i>
+                                <p class="rating-text">7.0</p>
+                            </div>
+                        </div>
+                        <div class="add-watchlist-container">
+                            <i class="fa-solid fa-plus"></i>
+                            <p class="add-watchlist-text">Watchlists</p>
+                        </div>
+                        <div class="trailer-container">
+                            <i class="fa-solid fa-play"></i>
+                            <p class="trailer-text">Trailer</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="popular-celebrities-container">
+                <div class="popular-celebrities-header">
+                    <div class="popular-celebrities-header-left">
+                        <h2>Most Popular <span class="colored-text">Celebrities</span></h2>
+                    </div>
+                    <div class="popular-celebrities-header-right">
+                        <a href="#" class="see-all-text">See all</a>
+                    </div>
+                </div>
+                <div class="popular-celebrities-body">
+                    <div class="celebrity-item">
+                        <img class="celebrity-img" src="https://m.media-amazon.com/images/M/MV5BZWIzMDVkYWUtYTA3My00MzIwLWJhY2MtNWNlODA3NWQyYmI4XkEyXkFqcGdeQXVyMTI2Nzk2ODk3._V1_.jpg" alt="Andria Arjona">
+                        <h3 class="celebrity-name">Andria Arjona</h3>
+                    </div>
+                    <div class="celebrity-item">
+                        <img class="celebrity-img" src="https://independenttalent-63a2.kxcdn.com/wp-content/uploads/2016/06/Screenshot-2022-08-25-at-10.23.09.png" alt="Dafne Keen">
+                        <h3 class="celebrity-name">Dafne Keen</h3>
+                    </div>
+                    <div class="celebrity-item">
+                        <img class="celebrity-img" src="https://ell.h-cdn.co/assets/16/17/3200x2133/gallery-1461617059-gettyimages-507244236.jpg" alt="Amandla Stenberg">
+                        <h3 class="celebrity-name">Amandla Stenberg</h3>
+                    </div>
+                    <div class="celebrity-item">
+                        <img class="celebrity-img" src="https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/255119_v9_bc.jpg" alt="Laz Alonso">
+                        <h3 class="celebrity-name">Laz Alonso</h3>
+                    </div>
+                    <div class="celebrity-item">
+                        <img class="celebrity-img" src="https://m.media-amazon.com/images/M/MV5BMGEzMTIwM2UtYjc5MC00ZGI4LWJiOTAtYzAwZmU0OTYzYWIxXkEyXkFqcGdeQXVyNDg0MzQyNA@@._V1_.jpg" alt="Glen Powell">
+                        <h3 class="celebrity-name">Glen Powell</h3>
+                    </div>
+                    <div class="celebrity-item">
+                        <img class="celebrity-img" src="https://www.limerickleader.ie/resizer/640/-1/true/2024_03_29/WhatsApp_Image_2024-03-29_at_11.07.59_AM-1711710496713.jpeg--bridgerton_star_nicola_coughlan_discusses_weight_as_us_fans_slam_her_body_during_intimate_scenes_.jpeg?1711710496872" alt="Nicola Coughlan">
+                        <h3 class="celebrity-name">Nicola Coughlan</h3>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
+    <footer>
+        <p class="footer-text">Follow Movie Fiesta on Social Media : </p>
+        <div class="social-media-container">
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" aria-label="Tiktok"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="X"><i class="fa-brands fa-square-x-twitter"></i></a>
+        </div>
+    </footer>
+    <dialog class="modal-signup-form" id="modalSignupForm">
+        <div class="modal-container">
+            <div class="modal-header">
+                <h2 class="signup-text">Sign Up</h2>
+                <button id="closeFormBtn" class="close-form-btn"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="modal-body">
+                <form class="signup-form">
+                    <fieldset class="form-name">
+                        <label for="inputName" class="label-name">Full Name</label><br>
+                        <input type="text" name="inputName" id="inputName" required>
+                    </fieldset>
+                    <fieldset class="form-email">
+                        <label for="inputEmail" class="label-email">Email</label><br>
+                        <input type="email" name="inputEmail" id="inputEmail" required>
+                    </fieldset>
+                    <fieldset class="form-password">
+                        <label for="inputPassword" class="label-password">Password</label><br>
+                        <input type="password" name="inputPassword" id="inputPassword" required>
+                    </fieldset>
+                    <fieldset class="form-gender">
+                        <label for="selectGender">Gender</label>
+                        <select name="selectGender" id="selectGender" required>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="prefer-not-to-say">Prefer not to say</option>
+                        </select>
+                    </fieldset>
+                    <fieldset class="form-address">
+                        <label for="inputAddress">Address</label><br>
+                        <textarea name="inputAddress" id="inputAddress" rows="4" maxlength="130"></textarea>
+                    </fieldset>
+                    <fieldset class="form-checkbox-policy">
+                        <input type="checkbox" id="checkPolicy">
+                        <label class="check-policy-label" for="checkPolicy">I agree with Terms of Service, Privacy Policy, and default Notification
+                            Settings.</label>
+                    </fieldset>
+                    <button type="submit" id="submitBtn" class="submit-btn">Sign Up</button>
+                </form>
+            </div>
+        </div>
+    </dialog>
+
+    <script type="text/javascript" src="./script.js"></script>
+</body>
+
+</html>

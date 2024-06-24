@@ -1,0 +1,1321 @@
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+
+    background-color: #FCF4E7;
+}
+
+h1, h2 {
+    font-family: 'Bevan', sans-serif;
+    margin: 0;
+}
+
+h3 {
+  font-weight: 800;
+}
+.colored-text {
+  color: #C73659;
+}
+
+header {
+  position: sticky;
+  border-bottom: 2px solid black;
+  display: flex;
+  align-items: center;
+  top: 0;
+  background-color: #FCF4E7;
+}
+
+header .header-left-session {
+  z-index: 1;
+}
+
+header .header-right-session {
+  z-index: 1;
+}
+
+header .header-right-session .search-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+} 
+  
+header .header-right-session .burger-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+header .header-right-session .header-navigation .nav-list {
+  list-style: none;
+  display: flex;
+}
+
+header .header-right-session .header-navigation .nav-list li > a {
+  text-decoration: none;
+  font-family: 'Bevan', sans-serif;
+}
+
+header .header-right-session .header-navigation .nav-list > li:not(.nav-signup-container) > a {
+  color: black;
+}
+
+header .header-right-session .header-navigation .nav-list .nav-signup-container > .fa-user, .nav-signup{
+  color: #C73659;
+}
+
+header .search-nav {
+  display: flex;
+  column-gap: 0;
+  height: fit-content;
+}
+
+header .search-nav .search-form {
+  display: flex;
+  height: fit-content;
+}
+
+header .search-nav .search-form .search-input {
+  border: 1px solid black;
+  background-color: white;
+}
+
+header .search-nav .search-form .btn-find {
+  background-color: white;
+  border: 1px solid black;
+  font-family: 'Bevan', sans-serif;
+  cursor: pointer;
+  color: black;
+}
+
+.signup-btn {
+  border: none;
+  background-color: transparent;
+  color: #C73659;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: 0;
+  cursor: pointer;
+  font-family: 'Bevan', sans-serif;
+}
+
+.signup-btn p {
+  margin: 0;
+}
+
+.hero-element {
+  position: relative;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid black;
+  z-index: -1;
+}
+
+.hero-element .hero-left-container {
+  display: flex;
+  flex-direction: column;
+  z-index: 3;
+}
+
+.hero-element .hero-left-container .hero-text-title {
+  font-family: 'Bevan', sans-serif;
+  margin: 0;
+}
+
+.hero-element .hero-left-container .hero-text-desc {
+  margin: 0;
+}
+
+.hero-element .hero-right-container {
+  z-index: 3;
+}
+
+.hero-element .hero-right-container .hero-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.hero-element .circle-1 {
+  position: absolute;
+  border-radius: 50%;
+  background-color: #F17B97;
+
+  animation: circleBeat;
+  animation-duration: 6s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.hero-element  .circle-2 {
+  position: absolute;
+  border-radius: 50%;
+  background-color: #F5C518;
+
+  animation: circleBeat;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.hero-element  .circle-3 {
+  position: absolute;
+  border-radius: 50%;
+  background-color: #C73659;
+
+  animation: circleBeat;
+  animation-duration: 0.7s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+
+.hero-element  .circle-4 {
+  position: absolute;
+  border-radius: 50%;
+  background-color: #464646;
+
+  animation: circleBeat;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.hero-element  .circle-5 {
+  position: absolute;
+  border-radius: 50%;
+  background-color: #6BC9F2;
+
+  animation: circleBeat;
+  animation-duration: 0.7s;
+  animation-delay: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes circleBeat {
+  0% {transform: scale(0);}
+  100% {transform: scale(1);}
+}
+
+.in-theater-container .in-theater-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.in-theater-container .in-theater-header .in-theater-header-left {
+  border-bottom: 2px solid black;
+}
+
+
+.in-theater-container .in-theater-header-right .see-all-text {
+  color: #464646;
+}
+
+.in-theater-container .in-theater-header-right .see-all-text:hover {
+  color: black;
+}
+
+.in-theater-body {
+  display: grid;
+  grid-auto-flow: column;
+  overflow: scroll;
+}
+
+.in-theater-body::-webkit-scrollbar{
+  display: none;
+}
+
+.in-theater-body .item-container {
+  height: fit-content;
+  background-color: white;
+  border-radius: 10px;
+  border: 2px solid black;
+}
+
+.in-theater-body .item-container .item-img {
+  border-radius: 7px 7px 0 0 ;
+  border: 2px solid black;
+  width: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.item-container .item-text-content .item-title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 800;
+}
+
+.item-text-content .rating-container {
+  display: flex;
+  align-items: center;
+}
+
+.item-text-content .rating-container .fa-star {
+  color: #F5C518;
+}
+
+.item-container .rating-container .rating-text {
+  font-weight: 600;
+  margin: 0;
+}
+
+.item-container .add-watchlist-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: #F17B97;
+  border: 2px solid black;
+  border-radius: 99px;
+  cursor: pointer;
+}
+
+.item-container .add-watchlist-container:hover {
+  background-color: #C73659;
+  transition: background-color 0.4s ease;
+}
+
+.item-container .add-watchlist-container .add-watchlist-text {
+  margin: 0;
+  font-weight: 700;
+}
+
+.item-container .trailer-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #6BC9F2;
+  color: white;
+  border: 2px solid black;
+  border-radius: 99px;
+  cursor: pointer;
+}
+
+.item-container .trailer-container:hover {
+  background-color: #4162b4;
+  transition: background-color 0.4s ease;
+}
+
+.item-container .trailer-container .trailer-text {
+  margin: 0;
+  font-weight: 700;
+}
+
+.top-ten-container .top-ten-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.top-ten-container .top-ten-header .top-ten-header-left {
+  border-bottom: 2px solid black;
+}
+
+
+.top-ten-container .top-ten-header-right .see-all-text {
+  color: #464646;
+}
+.top-ten-container .top-ten-header-right .see-all-text:hover {
+  color: black;
+}
+
+.top-ten-body {
+  display: grid;
+  grid-auto-flow: column;
+  overflow: scroll;
+}
+
+.top-ten-body::-webkit-scrollbar{
+  display: none;
+}
+
+.top-ten-body .item-container {
+  height: fit-content;
+  background-color: white;
+  border-radius: 10px;
+  border: 2px solid black;
+}
+
+.top-ten-body .item-container .item-img {
+  border-radius: 7px 7px 0 0 ;
+  border: 2px solid black;
+  width: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.popular-celebrities-container .popular-celebrities-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.popular-celebrities-container .popular-celebrities-header .popular-celebrities-header-left {
+  border-bottom: 2px solid black;
+}
+
+
+.popular-celebrities-container .popular-celebrities-header-right .see-all-text {
+  color: #464646;
+}
+
+.popular-celebrities-container .popular-celebrities-header-right .see-all-text:hover {
+  color: black;
+}
+
+.popular-celebrities-body {
+  display: grid;
+  grid-auto-flow: column;
+  overflow: scroll;
+}
+
+.popular-celebrities-body::-webkit-scrollbar {
+  display: none;
+}
+
+.popular-celebrities-body .celebrity-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.popular-celebrities-body .celebrity-item .celebrity-img {
+  border-radius: 999px;
+  background-color: white;
+  border: 2px solid black;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.popular-celebrities-body .celebrity-item .celebrity-name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.modal-signup-form {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 0;
+  margin: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-container {
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 10px;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal-container .modal-header {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-container .modal-header .close-form-btn {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  cursor: pointer;
+  color: black;
+}
+
+.signup-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal-body .signup-form > fieldset {
+  border: none;
+  padding: 0;
+  width: 100%;
+}
+
+.modal-body .signup-form label:not(.check-policy-label) {
+  font-weight: 800;
+}
+
+.modal-body .signup-form input:not(#checkPolicy), textarea {
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.signup-form #inputAddress {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.signup-form .form-gender {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  color: black;
+}
+
+.form-gender #selectGender {
+  color: black;
+  background-color: white;
+  border: 1px solid black
+}
+
+.signup-form .form-checkbox-policy {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.signup-form .form-checkbox-policy input {
+  cursor: pointer;
+}
+
+.signup-form .submit-btn {
+  width: fit-content;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: #C73659;
+  color: white;
+  font-family: 'Bevan', sans-serif;
+  cursor: pointer;
+}
+
+.signup-form .submit-btn:hover {
+  background-color: #A91D3A;
+  transition: background-color 0.4s ease;
+
+}
+
+footer {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+footer .social-media-container {
+  display: flex;
+  align-items: center;
+}
+
+footer .social-media-container a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Phone */
+@media screen and (max-width: 843px) {
+  h1, h2 {
+    font-size: 1rem;
+  }
+  
+  h3 {
+    margin: 0;
+    font-size: 0.75rem;
+    font-weight: 800;
+  }
+
+  header {
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
+
+  header .header-right-session .search-btn > .fa-magnifying-glass {
+    font-size: 1.25rem;
+    color: black;
+  }
+
+  header .header-right-session .burger-btn {
+    margin-left: 20px;
+    color: black;
+  }
+    
+  header .header-right-session .burger-btn > .fa-bars {
+    font-size: 1.25rem;
+  }
+
+  header .header-right-session .header-navigation {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: fit-content;
+    height: 100%;
+    background-color: white;
+    transform: translateX(100%);
+    transition: all .4s ease;
+  }
+
+  header .header-right-session .header-navigation.open {
+    transform: translateX(0);
+  }
+
+  header .header-right-session .header-navigation .close-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    color: black;
+  }
+
+  header .header-right-session .header-navigation .nav-list {
+    flex-direction: column;
+    row-gap: 20px;
+    margin-top: 50px;
+    padding: 20px;
+  }
+
+  header .header-right-session .header-navigation .nav-list > li > a {
+    margin-left: 10px;
+    font-size: 1rem;
+  }
+
+  header .search-nav {
+    width: 100%;
+    max-height: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    justify-content: center;
+    background-color: white;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+
+    overflow: hidden;
+
+    transition: all .6s;
+  }
+
+  header .search-nav.open {
+    max-height: 500px;
+    transition: all 2s;
+  }
+
+  header .search-nav .search-form {
+    width: 100%;
+    justify-content: center;
+    margin: 15px 0 20px 0;
+  }
+
+  header .search-nav .search-form .search-input {
+    width: 70%;
+    padding: 10px 20px;
+    box-shadow: 5px 5px black;
+    border-radius: 99px 0 0 99px;
+  }
+
+  header .search-nav .search-form .btn-find {
+    width: 20%;
+    box-shadow: 5px 5px black;
+    border-radius: 0 99px 99px 0;
+  }
+
+  .signup-btn {
+    column-gap: 15px;
+    font-size: 1rem;
+  }
+
+  .hero-element {
+    padding: 27px 20px;
+  }
+
+  .hero-element .hero-left-container {
+    max-width: 204px;
+  }
+
+  .hero-element .hero-left-container .hero-text-title {
+    font-size: 1.25rem;
+  }
+
+  .hero-element .hero-left-container .hero-text-desc {
+    margin-top: 10px;
+    font-size: 0.5rem;
+    max-width: 170px;
+  }
+  
+  .hero-element .hero-right-container {
+    width: 139px;
+    height: 142px;
+  }
+
+  .hero-element .circle-1 { 
+    top: 60%;
+    left: 1%;
+    width: 70px;
+    height: 70px;
+  }
+  
+  .hero-element  .circle-2 {
+    top: 10%;
+    left: 50%;
+    width: 24px;
+    height: 24px;
+  }
+  
+  .hero-element  .circle-3 {
+    top: 20%;
+    left: 57%;
+    width: 16px;
+    height: 16px;
+  }
+  
+  .hero-element  .circle-4 {
+    top: 70%;
+    left: 55%;
+    width: 50px;
+    height: 50px;
+  }
+
+  .hero-element  .circle-5 {
+    top: 5%;
+    left: 90%;
+    width: 16px;
+    height: 16px;
+  }
+
+  .main-content {
+    padding: 10px 20px;
+  }
+
+  .in-theater-container .in-theater-header-right .see-all-text {
+    font-size: 0.75rem;
+  }
+
+  .in-theater-body {
+    padding: 16px 0;
+    column-gap: 16px;
+  }
+
+  .in-theater-body .item-container {
+    width: 143px;
+    box-shadow: 5px 5px black;
+  }
+
+  .in-theater-body .item-container .item-text-content {
+    margin: 10px;
+  }
+  
+  .item-text-content .item-title {
+    height: 32px;
+  }
+
+  .item-container .item-img {
+    height: 213px;
+  }
+
+  .item-container .rating-container {
+    margin-top: 10px;
+    column-gap: 5px;
+  }
+
+  .item-text-content .rating-container .fa-star, .rating-text {
+    font-size: 0.625rem;
+  }
+  
+  .item-container .add-watchlist-container {
+    margin: 0 10px 10px 10px;
+    padding: 5px;
+    column-gap: 5px;
+    box-shadow: 0 3px black;
+  }
+
+  .item-container .add-watchlist-container .fa-plus, .add-watchlist-text {
+    font-size: 0.625rem;
+  }
+
+  .item-container .trailer-container {
+    margin: 0 10px 10px 10px;
+    padding: 5px;
+    column-gap: 5px;
+    box-shadow: 0 3px black;
+  }
+
+  .item-container .trailer-container .fa-play, .trailer-text {
+    font-size: 0.625rem;
+  }
+
+  .top-ten-container .top-ten-header-right .see-all-text {
+    font-size: 0.75rem;
+  }
+
+  .top-ten-body {
+    padding: 16px 0;
+    column-gap: 16px;
+  }
+
+  .top-ten-body .item-container {
+    width: 143px;
+    box-shadow: 5px 5px black;
+  }
+
+  .top-ten-body .item-container .item-text-content {
+    margin: 10px;
+  }
+
+  .popular-celebrities-header {
+    margin-bottom: 16px;
+  }
+
+  .popular-celebrities-body {
+    padding: 0 5px;
+    column-gap: 20px;
+  }
+
+  .popular-celebrities-container .popular-celebrities-header-right .see-all-text {
+    font-size: 0.75rem;
+  }
+
+  .popular-celebrities-body .celebrity-item .celebrity-img {
+    width: 91px;
+    height: 91px;
+    box-shadow: 5px 5px black;
+    margin-bottom: 10px;
+  }
+
+  .popular-celebrities-body .celebrity-item .celebrity-name {
+    height: 36px;
+  }
+
+  .modal-container {
+    width: 277px;
+    padding: 20px;
+  }
+
+  .modal-container .modal-header .close-form-btn {
+    right: 0px;
+  }
+
+  .modal-container .modal-header .close-form-btn .fa-x {
+    font-size: 1rem;
+  }
+
+  .modal-body {
+    margin-top: 10px;
+  }
+
+  .modal-body .signup-form > fieldset {
+    margin-bottom: 10px;
+  }
+
+  .modal-body .signup-form label:not(.check-policy-label) {
+    font-size: 0.75rem;
+  }
+
+  .modal-body .signup-form input:not(#checkPolicy) {
+    height: 25px;
+    margin-top: 5px;
+    max-width: 265px;
+    box-shadow: 3px 3px black;
+  }
+
+  .modal-body .signup-form #inputAddress {
+    margin-top: 5px;
+    max-width: 265px;
+    box-shadow: 3px 3px black;
+
+  }
+
+  .signup-form .form-gender {
+    row-gap: 10px;
+  }
+
+  .signup-form .form-checkbox-policy {
+    column-gap: 5px;
+  }
+  .signup-form .form-checkbox-policy label {
+    font-size: 0.5rem;
+  }
+
+  .signup-form .submit-btn {
+    padding: 5px 40px;
+    box-shadow: 3px 3px black;
+  }
+
+  footer {
+    padding: 10px;
+    row-gap: 10px;
+  }
+
+  footer .footer-text {
+    font-size: 0.625rem;
+    font-weight: 800;
+    margin: 0;
+  }
+
+  footer .social-media-container {
+    column-gap: 30px;
+  }
+
+}
+
+/* Tablet and Desktop */
+
+@media screen and (min-width: 843px) {
+  .search-btn,
+  .burger-btn,
+  .close-btn {
+    display: none;
+  }
+
+  h1,
+  h3 {
+    font-size: 1rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  header {
+    padding: 20px 20px;
+  }
+
+  header .header-left-session {
+    margin-right: auto;
+  }
+  header .header-right-session .header-navigation .nav-list {
+    column-gap: 15px;
+    padding: 0;
+    margin: 0;
+  }
+
+  header .header-right-session .header-navigation .nav-list > li > a {
+    margin-left: 6px;
+    font-size: 0.75rem;
+  }
+
+  header .header-right-session .header-navigation .nav-list > li > i {
+    font-size: 0.75rem;
+  }
+
+  .signup-btn {
+    column-gap: 6px;
+  }
+
+  header .search-nav {
+    margin-left: 10px;
+    width: 187px;
+  }
+
+  header .search-nav .search-form {
+    width: 100%;
+    justify-content: center;
+  }
+
+  header .search-nav .search-form .search-input {
+    width: 70%;
+    padding: 5px 10px;
+    box-shadow: 5px 5px black;
+    border-radius: 10px 0 0 10px;
+
+  }
+
+  header .search-nav .search-form .btn-find {
+    width: fit-content;
+    box-shadow: 5px 5px black;
+    font-size: 0.75rem;
+    border-radius: 0 10px 10px 0;
+    padding: 5px 10px;
+  }
+
+  .hero-element {
+    padding: 20px 60px;
+  }
+
+  .hero-element .hero-left-container {
+    width: 409px;
+  }
+
+  .hero-element .hero-left-container .hero-text-title {
+    font-size: 2rem;
+  }
+
+  .hero-element .hero-left-container .hero-text-desc {
+    margin-top: 10px;
+    font-size: 0.75rem;
+    max-width: 360px;
+  }
+  
+  .hero-element .hero-right-container {
+    width: 228px;
+    height: 232px;
+  }
+
+  .hero-element .circle-1 { 
+    top: 60%;
+    left: 2%;
+    width: 90px;
+    height: 90px;
+  }
+  
+  .hero-element  .circle-2 {
+    top: 10%;
+    left: 50%;
+    width: 24px;
+    height: 24px;
+  }
+  
+  .hero-element  .circle-3 {
+    top: 20%;
+    left: 57%;
+    width: 16px;
+    height: 16px;
+  }
+  
+  .hero-element  .circle-4 {
+    top: 72%;
+    left: 63%;
+    width: 60px;
+    height: 60px;
+  }
+
+  .hero-element  .circle-5 {
+    top: 5%;
+    left: 90%;
+    width: 16px;
+    height: 16px;
+  }
+
+  .main-content {
+    padding: 20px 60px;
+  }
+
+  .in-theater-container .in-theater-header-right .see-all-text {
+    font-size: 1rem;
+  }
+
+  .in-theater-body {
+    padding: 16px 0;
+    column-gap: 23px;
+  }
+
+  .in-theater-body .item-container {
+    width: 219px;
+    box-shadow: 8px 8px black;
+  }
+
+  .in-theater-body .item-container .item-text-content {
+    margin: 10px 20px 20px 20px;
+  }
+
+  .item-text-content .item-title {
+    height: 55px;
+  }
+
+  .item-container .item-img {
+    height: 325px;
+  }
+
+  .item-container .rating-container {
+    margin-top: 10px;
+    column-gap: 5px;
+  }
+
+  .item-text-content .rating-container .fa-star, .rating-text {
+    font-size: 1rem;
+  }
+  
+  .item-container .add-watchlist-container {
+    margin: 0 20px 10px 20px;
+    padding: 5px;
+    column-gap: 5px;
+    box-shadow: 0 3px black;
+  }
+
+  .item-container .add-watchlist-container .fa-plus, .add-watchlist-text {
+    font-size: 0.875rem;
+  }
+
+  .item-container .trailer-container {
+    margin: 0 20px 20px 20px;
+    padding: 5px;
+    column-gap: 5px;
+    box-shadow: 0 3px black;
+  }
+
+  .item-container .trailer-container .fa-play, .trailer-text {
+    font-size: 0.875rem;
+  }
+
+  .top-ten-container {
+    margin-top: 20px;
+  }
+  .top-ten-container .top-ten-header-right .see-all-text {
+    font-size: 1rem;
+  }
+
+  .top-ten-body {
+    padding: 16px 0;
+    column-gap: 23px;
+  }
+
+  .top-ten-body .item-container {
+    width: 219px;
+    box-shadow: 8px 8px black;
+  }
+
+  .top-ten-body .item-container .item-text-content {
+    margin: 10px 20px 20px 20px;
+  }
+
+  .popular-celebrities-container {
+    margin-top: 20px;
+  }
+
+  .popular-celebrities-container .popular-celebrities-header-right .see-all-text {
+    font-size: 1rem;
+  }
+
+  .popular-celebrities-header {
+    margin-bottom: 20px;
+  }
+
+  .popular-celebrities-body {
+    padding: 0 10px;
+    column-gap: 20px;
+  }
+
+  .popular-celebrities-body .celebrity-item .celebrity-img {
+    width: 180px;
+    height: 178px;
+    box-shadow: 8px 8px black;
+    margin-bottom: 10px;
+  }
+
+  .popular-celebrities-body .celebrity-item .celebrity-name {
+    height: 36px;
+    font-weight: 800;
+  }
+
+  .modal-container {
+    width: 350px;
+    padding: 20px;
+  }
+
+  .modal-container .modal-header .close-form-btn {
+    right: 0px;
+  }
+
+  .modal-container .modal-header .close-form-btn .fa-xmark {
+    font-size: 1.25rem;
+  }
+
+  .modal-body {
+    margin-top: 10px;
+  }
+
+  .modal-body .signup-form > fieldset {
+    margin-bottom: 20px;
+  }
+
+  .modal-body .signup-form label:not(.check-policy-label) {
+    font-size: 1rem;
+  }
+
+  .modal-body .signup-form input:not(#checkPolicy) {
+    height: 25px;
+    margin-top: 5px;
+    max-width: 340px;
+    box-shadow: 3px 3px black;
+  }
+
+  .modal-body .signup-form #inputAddress {
+    margin-top: 5px;
+    max-width: 340px;
+    box-shadow: 3px 3px black;
+
+  }
+
+  .signup-form .form-gender {
+    row-gap: 10px;
+  }
+
+  .signup-form .form-checkbox-policy {
+    column-gap: 10px;
+  }
+  .signup-form .form-checkbox-policy label {
+    font-size: 0.75rem;
+  }
+
+  .signup-form .submit-btn {
+    padding: 5px 40px;
+    box-shadow: 3px 3px black;
+  }
+
+  footer {
+    padding: 20px;
+    row-gap: 20px;
+  }
+
+  footer .footer-text {
+    font-size: 1rem;
+    font-weight: 800;
+    margin: 0;
+  }
+
+  footer .social-media-container {
+    column-gap: 30px;
+  }
+
+  footer .social-media-container i {
+    font-size: 1.25rem;
+  }
+  
+}
+
+/* Desktop */
+
+@media screen and (min-width: 1280px) {
+    header .search-nav {
+      width: 280px;
+    }
+    h1 {
+      font-size: 1.5rem;
+    }
+    h2 {
+      font-size: 2rem;
+    }
+    h3 {
+      font-size: 1.25rem;
+    }
+
+    header {
+      padding: 10px 60px;
+    }
+
+    header .header-right-session .header-navigation .nav-list {
+      column-gap: 30px;
+    }
+
+    header .header-right-session .header-navigation .nav-list > li > a {
+      margin-left: 6px;
+      font-size: 1rem;
+    }
+
+    header .header-right-session .header-navigation .nav-list > li > i {
+      font-size: 1rem;
+    }
+
+    .signup-btn {
+      column-gap: 6px;
+      font-size: 1rem;
+    }
+    
+    .hero-element .hero-left-container {
+      width: 705px;
+    }
+
+    .hero-element .hero-left-container .hero-text-title {
+      font-size: 4rem;
+      width: 705px;
+      line-height: 80px;
+    }
+
+    .hero-element .hero-left-container .hero-text-desc {
+      font-size: 1rem;
+      max-width: 600px;
+    }
+
+    .hero-element .hero-right-container {
+      width: 308px;
+      height: 314px;
+    }
+
+    .hero-element .circle-1 { 
+      top: 65%;
+      left: 2%;
+      width: 110px;
+      height: 110px;
+    }
+    
+    .hero-element  .circle-2 {
+      top: 10%;
+      left: 50%;
+      width: 24px;
+      height: 24px;
+    }
+    
+    .hero-element  .circle-3 {
+      top: 20%;
+      left: 57%;
+      width: 16px;
+      height: 16px;
+    }
+    
+    .hero-element  .circle-4 {
+      top: 73%;
+      left: 66%;
+      width: 80px;
+      height: 80px;
+    }
+  
+    .hero-element  .circle-5 {
+      top: 10%;
+      left: 95%;
+      width: 16px;
+      height: 16px;
+    }
+
+    .in-theater-body .item-container {
+      width: 283px;
+    }
+
+    .top-ten-body .item-container {
+      width: 283px;
+    }
+
+    .item-container .item-img {
+      height: 329px;
+    }
+
+    .item-container .add-watchlist-container .fa-plus, .add-watchlist-text {
+      font-size: 1rem;
+    }
+
+    .item-container .trailer-container .fa-play, .trailer-text {
+      font-size: 1rem;
+    }
+
+    .popular-celebrities-body .celebrity-item .celebrity-img {
+      width: 250px;
+      height: 250px;
+    }
+}
