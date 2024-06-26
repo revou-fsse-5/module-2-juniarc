@@ -8,8 +8,7 @@
     <meta name="author" content="Cahya Juniar">
     <title>Movie Fiesta</title>
 
-    <!-- Style CSS -->
-     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./assets/fav-icon.png">
 
      <!-- Bevan Font -->
      <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,6 +22,9 @@
 
      <!-- Fontawesome icons -->
      <script src="https://kit.fontawesome.com/c8ec4a72be.js" crossorigin="anonymous"></script>
+
+     <!-- Style CSS -->
+     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -31,10 +33,10 @@
             <h1 class="web-title">Movie Fiesta</h1>
         </div>
         <div class="header-right-session">
-            <button class="search-btn" id="searchBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
-            <button class="burger-btn" id="burgerBtn"><i class="fa-solid fa-bars"></i></button>
+            <button class="search-btn" id="searchBtn" aria-label="search button"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <button class="burger-btn" id="burgerBtn" aria-label="navigation button"><i class="fa-solid fa-bars"></i></button>
             <nav class="header-navigation" id="headerNavigation">
-                <button id="closeBtn" class="close-btn"><i class="fa-solid fa-xmark"></i></button>
+                <button id="closeBtn" class="close-btn" aria-label="close button"><i class="fa-solid fa-xmark"></i></button>
                 <ul class="nav-list">
                     <li class="nav-home-container">
                         <i class="fa-solid fa-house"></i>
@@ -89,7 +91,7 @@
             <div class="circle-5"></div>
         </article>
         <article class="main-content">
-            <section class="in-theater-container">
+            <section class="in-theater-container" id="inTheater">
                 <div class="in-theater-header">
                     <div class="in-theater-header-left">
                         <h2>In <span class="colored-text">Theaters</span></h2>
@@ -101,7 +103,7 @@
                 <div class="in-theater-body">
                     <div class="item-container">
                         <img class="item-img"
-                            src="https://media.21cineplex.com/webcontent/gallery/pictures/171568364064317_287x421.jpg"
+                            src="./assets/poster-how-to.jpg"
                             alt="how to make millions before grandma dies">
                         <div class="item-text-content">
                             <h3 class="item-title">How to Make Millions Before Grandma Dies</h3>
@@ -121,7 +123,7 @@
                     </div>
                     <div class="item-container">
                         <img class="item-img"
-                            src="https://media.21cineplex.com/webcontent/gallery/pictures/171706414775783_290x426.jpg"
+                            src="./assets/poster-inside-out.jpg"
                             alt="Inside Out 2 Poster">
                         <div class="item-text-content">
                             <h3 class="item-title">Inside Out 2</h3>
@@ -132,7 +134,7 @@
                         </div>
                         <div class="add-watchlist-container">
                             <i class="fa-solid fa-plus"></i>
-                            <p class="add-watchlist-text">Watchlists</p>
+                            <p class="add-watchlist-text">Watchlist</p>
                         </div>
                         <div class="trailer-container">
                             <i class="fa-solid fa-play"></i>
@@ -152,7 +154,7 @@
                         </div>
                         <div class="add-watchlist-container">
                             <i class="fa-solid fa-plus"></i>
-                            <p class="add-watchlist-text">Watchlists</p>
+                            <p class="add-watchlist-text">Watchlist</p>
                         </div>
                         <div class="trailer-container">
                             <i class="fa-solid fa-play"></i>
@@ -161,7 +163,7 @@
                     </div>
                     <div class="item-container">
                         <img class="item-img"
-                            src="https://media.21cineplex.com/webcontent/gallery/pictures/171697791215350_290x426.jpg"
+                            src="./assets/poster-bad-boys.jpg"
                             alt="Bad Boys: Ride or Die poster">
                         <div class="item-text-content">
                             <h3 class="item-title">Bad Boys: Ride or Die</h3>
@@ -172,7 +174,7 @@
                         </div>
                         <div class="add-watchlist-container">
                             <i class="fa-solid fa-plus"></i>
-                            <p class="add-watchlist-text">Watchlists</p>
+                            <p class="add-watchlist-text">Watchlist</p>
                         </div>
                         <div class="trailer-container">
                             <i class="fa-solid fa-play"></i>
@@ -181,8 +183,8 @@
                     </div>
                     <div class="item-container">
                         <img class="item-img"
-                            src="https://media.21cineplex.com/webcontent/gallery/pictures/171567210358448_290x426.jpg"
-                            alt="My Boo Poster">
+                            src="./assets/poster-haikyuu.jpg"
+                            alt="Haikyuu Poster">
                         <div class="item-text-content">
                             <h3 class="item-title">Haikyuu!! The Dumpster Battle</h3>
                             <div class="rating-container">
@@ -221,7 +223,7 @@
                     </div>
                     <div class="item-container">
                         <img class="item-img"
-                            src="https://media.21cineplex.com/webcontent/gallery/pictures/171810847663231_405x594.jpg"
+                            src="./assets/poster-my-boo.jpg"
                             alt="My Boo Poster">
                         <div class="item-text-content">
                             <h3 class="item-title">My Boo</h3>
@@ -241,7 +243,7 @@
                     </div>
                 </div>
             </section>
-            <section class="top-ten-container">
+            <section class="top-ten-container" id="topTen">
                 <div class="top-ten-header">
                     <div class="top-ten-header-left">
                         <h2><span span class="colored-text">Top 10</span> This Week</h2>
@@ -264,7 +266,7 @@
                         </div>
                         <div class="add-watchlist-container">
                             <i class="fa-solid fa-plus"></i>
-                            <p class="add-watchlist-text">Watchlists</p>
+                            <p class="add-watchlist-text">Watchlist</p>
                         </div>
                         <div class="trailer-container">
                             <i class="fa-solid fa-play"></i>
@@ -273,7 +275,7 @@
                     </div>
                     <div class="item-container">
                         <img class="item-img"
-                            src="https://media.21cineplex.com/webcontent/gallery/pictures/171568364064317_287x421.jpg"
+                            src="./assets/poster-how-to.jpg"
                             alt="how to make millions before grandma dies">
                         <div class="item-text-content">
                             <h3 class="item-title">How to Make Millions Before Grandma Dies</h3>
@@ -293,7 +295,7 @@
                     </div>
                     <div class="item-container">
                         <img class="item-img"
-                            src="https://media.21cineplex.com/webcontent/gallery/pictures/171706414775783_290x426.jpg"
+                            src="./assets/poster-inside-out.jpg"
                             alt="Inside Out 2 Poster">
                         <div class="item-text-content">
                             <h3 class="item-title">Inside Out 2</h3>
@@ -313,7 +315,7 @@
                     </div>
                     <div class="item-container">
                         <img class="item-img"
-                            src="https://media.21cineplex.com/webcontent/gallery/pictures/171567210358448_290x426.jpg"
+                            src="./assets/poster-haikyuu.jpg"
                             alt="Haikyuu!! The Dumpster Battle Poster">
                         <div class="item-text-content">
                             <h3 class="item-title">Haikyuu!! The Dumpster Battle</h3>
@@ -333,7 +335,7 @@
                     </div>
                     <div class="item-container">
                         <img class="item-img"
-                            src="https://media.21cineplex.com/webcontent/gallery/pictures/171810847663231_405x594.jpg"
+                            src="./assets/poster-my-boo.jpg"
                             alt="My Boo Poster">
                         <div class="item-text-content">
                             <h3 class="item-title">My Boo</h3>
@@ -353,7 +355,7 @@
                     </div>
                     <div class="item-container">
                         <img class="item-img"
-                            src="https://media.21cineplex.com/webcontent/gallery/pictures/171697791215350_290x426.jpg"
+                            src="./assets/poster-bad-boys.jpg"
                             alt="Bad Boys: Ride or Die poster">
                         <div class="item-text-content">
                             <h3 class="item-title">Bad Boys: Ride or Die</h3>
@@ -364,7 +366,7 @@
                         </div>
                         <div class="add-watchlist-container">
                             <i class="fa-solid fa-plus"></i>
-                            <p class="add-watchlist-text">Watchlists</p>
+                            <p class="add-watchlist-text">Watchlist</p>
                         </div>
                         <div class="trailer-container">
                             <i class="fa-solid fa-play"></i>
@@ -373,7 +375,7 @@
                     </div>
                 </div>
             </section>
-            <section class="popular-celebrities-container">
+            <section class="popular-celebrities-container" id="popularCelebrities">
                 <div class="popular-celebrities-header">
                     <div class="popular-celebrities-header-left">
                         <h2>Most Popular <span class="colored-text">Celebrities</span></h2>
@@ -404,20 +406,152 @@
                         <h3 class="celebrity-name">Glen Powell</h3>
                     </div>
                     <div class="celebrity-item">
-                        <img class="celebrity-img" src="https://www.limerickleader.ie/resizer/640/-1/true/2024_03_29/WhatsApp_Image_2024-03-29_at_11.07.59_AM-1711710496713.jpeg--bridgerton_star_nicola_coughlan_discusses_weight_as_us_fans_slam_her_body_during_intimate_scenes_.jpeg?1711710496872" alt="Nicola Coughlan">
+                        <img class="celebrity-img" src="./assets/foto-coughlan.jpeg" alt="Nicola Coughlan">
                         <h3 class="celebrity-name">Nicola Coughlan</h3>
                     </div>
                 </div>
             </section>
         </article>
+        <article class="news-content">
+            <div class="news-container">
+                <div class="news-container-left">
+                    <h2 class="header-news-text">Hot News</h2>
+                    <div class="news-wrapper">
+                        <figure class="news-figure" id="news1">
+                            <img src="./assets/news-image-1.webp" alt="News image-1">
+                            <div class="news-bg-gradient"></div>
+                            <figcaption>Kevin Costner Brings 5 Kids to 'Horizon' Premiere in Los Angeles</figcaption>
+                        </figure> <figure class="news-figure" id="news2">
+                            <img src="./assets/news-image-2.webp" alt="News image-2">
+                            <div class="news-bg-gradient"></div>
+                            <figcaption>Every Marvel Actor Who Has Shaded Their Own MCU Movie</figcaption>
+                        </figure>
+                        <figure class="news-figure" id="news3">
+                            <img src="https://m.media-amazon.com/images/M/MV5BNzZmYjc1YWYtZGMwZi00MTM1LWEzYmQtM2RkZTdiYWFkMTVhXkEyXkFqcGdeQWFsZWxvZw@@._V1_QL75_UX500_CR0,0,500,281_.jpg" alt="News image-3">
+                            <div class="news-bg-gradient"></div>
+                            <figcaption>Guess Who Doesn't Watch "House of the Dragon"</figcaption>
+                        </figure>
+                    </div>
+                    <div class="news-nav">
+                        <a href="#news1" aria-label="first news"></a>
+                        <a href="#news2" aria-label="second news"></a>
+                        <a href="#news3" aria-label="third news"></a>
+                    </div>
+                </div>
+                <div class="news-container-right">
+                    <h2 class="header-up-next-text">Up Next</h2>
+                    <div class="up-next-content">
+                        <div class="up-next-item">
+                            <div class="up-next-item-img">
+                                <img src="./assets/poster-inside-out.jpg" alt="Inside Out 2 Poster">
+                            </div>
+                            <div class="up-next-text">
+                                <h3 class="up-next-item-title">Inside Out 2</h3>
+                                <div class="rating-container">
+                                    <i class="fa-solid fa-star"></i>
+                                    <p class="rating-text">8.2</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="up-next-item">
+                            <div class="up-next-item-img">
+                                <img src="./assets/poster-my-boo.jpg"
+                                alt="My Boo Poster">
+                            </div>
+                            <div class="up-next-text">
+                                <h3 class="up-next-item-title">My Boo</h3>
+                                <div class="rating-container">
+                                    <i class="fa-solid fa-star"></i>
+                                    <p class="rating-text">7.4</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <section class="discover-session">
+            <div class="black-layer"></div>
+            <div class="blue-layer">
+                <div class="discover-session-top">
+                    <div class="discover-text-content">
+                        <p class="discover-text-content-title">Discovering Your Desire <span class="colored-text">Movies</span></p>
+                        <p class="discover-text-content-desc">Start your cinematic journey now.</p>
+                    </div>
+                    <div class="discover-image-top">
+                        <img src="https://rukminim2.flixcart.com/image/850/1000/jql8fbk0/poster/u/z/x/medium-pwl-wall-poster-13-19-inches-matte-finish-adventure-time-original-imaehbdvfmhue3fe.jpeg?q=90&crop=false" alt="Discover Movie Image">
+                    </div>
+                </div>
+                <div class="discover-session-bottom">
+                        <div class="box1">
+                            <img src="./assets/poster-my-boo.jpg" alt="My boo poster">    
+                        </div>
+                        <div class="box2">
+                            <img class="item-img"
+                            src="https://m.media-amazon.com/images/M/MV5BMjA5Yjg1YTQtYzA5ZS00ZWNjLTkwNjYtOTE5MzQwZDM4YmIwXkEyXkFqcGdeQXVyMTEzMTI1Mjk3._V1_FMjpg_UX1000_.jpg"
+                            alt="Shin Jigen! Crayon Shin-can The Movie Poster">    
+                        </div>
+                        <div class="box3">
+                            <img class="item-img"
+                                src="./assets/poster-haikyuu.jpg"
+                                alt="Haikyuu Poster"> 
+                            </div>
+                        <div class="box4">
+                            <img class="item-img"
+                                src="https://deadline.com/wp-content/uploads/2016/08/adventure_time.jpg?w=1024"
+                                alt="Illustration"> 
+                        </div>
+                        <div class="box5">
+                            <img class="item-img"
+                                src="./assets/poster-bad-boys.jpg"
+                                alt="Bad Boys: Ride or Die poster"> </div>
+                        <div class="box6"> 
+                            <img class="item-img"
+                                src="https://m.media-amazon.com/images/M/MV5BNDRjYTA2MzgtYWI3My00YmFjLTk1MjgtYTkwZDkyMzg1OWVjXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+                                alt="Ipar Adalah Maut Poster">
+                        </div>
+                        <div class="box7">
+                            <img class="item-img"
+                                src="https://images.thedirect.com/media/article_full/adventure-times.jpg"
+                                alt="Illustration">
+                        </div>
+                        <div class="box8"> 
+                            <img class="item-img"
+                                src="./assets/poster-inside-out.jpg"
+                                alt="Inside Out 2 Poster">
+                        </div>
+                        <div class="box9"> 
+                            <img class="item-img"
+                                src="./assets/poster-my-boo.jpg"
+                                alt="My Boo Poster">
+                        </div>
+                        <div class="box10"> 
+                            <img class="item-img"
+                                src="./assets/illustration-1.jpg"
+                                alt="Illustration">
+                        </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
-        <p class="footer-text">Follow Movie Fiesta on Social Media : </p>
-        <div class="social-media-container">
-            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
-            <a href="#" aria-label="Tiktok"><i class="fa-brands fa-tiktok"></i></a>
-            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#" aria-label="X"><i class="fa-brands fa-square-x-twitter"></i></a>
+        <div class="footer-left">
+            <h2 class="footer-title">Movie Fiesta</h2>
+            <ul class="feature-list">
+                <li class="featuer-list-item"><a href="#inTheater">In Theaters</a></li>
+                <li class="featuer-list-item"><a href="#topTen">Top 10 This Week</a></li>
+                <li class="featuer-list-item"><a href="#popularCelebrities">Most Popular Celebrity</a></li>
+            </ul>
+            <p class="footer-text">Follow Movie Fiesta on Social Media : </p>
+            <div class="social-media-container">
+                <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" aria-label="Tiktok"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" aria-label="X"><i class="fa-brands fa-square-x-twitter"></i></a>
+            </div>
+        </div>
+        <div class="footer-right">
+            <img src="./assets/giphy.webp" alt="Angry bird eating popcorn GIF">
         </div>
     </footer>
     <dialog class="modal-signup-form" id="modalSignupForm">
