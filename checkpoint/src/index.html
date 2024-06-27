@@ -6,6 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Movie Fiesta is a website to fulfil RevoU assignment module-1">
     <meta name="author" content="Cahya Juniar">
+    <!-- Meta For Facebook -->
+    <meta property="og:title" content="Movie Fiesta" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="www.facebook.com" />
+    <meta property="og:description" content="Movie Fiesta Facebook page" />
+    
+    <!-- Meta For Twitter -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Movie Fiesta" />
+    <meta name="twitter:description" content="Movie Fiesta Twitter page" />
+    <meta name="twitter:image" content="www.x.com" />
     <title>Movie Fiesta</title>
 
     <link rel="icon" href="./assets/fav-icon.png">
@@ -28,7 +39,7 @@
 </head>
 
 <body>
-    <header>
+    <header data-sticky-offse="6">
         <div class="header-left-session">
             <h1 class="web-title">Movie Fiesta</h1>
         </div>
@@ -101,7 +112,7 @@
                     </div>
                 </div>
                 <div class="in-theater-body">
-                    <div class="item-container">
+                    <div class="item-container" id="inTheaterItemFirst">
                         <img class="item-img"
                             src="./assets/poster-how-to.jpg"
                             alt="how to make millions before grandma dies">
@@ -161,7 +172,7 @@
                             <p class="trailer-text">Trailer</p>
                         </div>
                     </div>
-                    <div class="item-container">
+                    <div class="item-container" id="inTheaterItemMiddle">
                         <img class="item-img"
                             src="./assets/poster-bad-boys.jpg"
                             alt="Bad Boys: Ride or Die poster">
@@ -221,7 +232,7 @@
                             <p class="trailer-text">Trailer</p>
                         </div>
                     </div>
-                    <div class="item-container">
+                    <div class="item-container" id="inTheaterItemLast">
                         <img class="item-img"
                             src="./assets/poster-my-boo.jpg"
                             alt="My Boo Poster">
@@ -242,6 +253,11 @@
                         </div>
                     </div>
                 </div>
+                <div class="in-theater-slider slider">
+                    <a class="slider-container" href="#inTheaterItemFirst" aria-label="left slider"><i class="fa-solid fa-angle-left"></i></a>
+                    <a class="slider-middle" href="#inTheaterItemMiddle" aria-label="middle slider"><div class="circle-slider"></div></a>
+                    <a class="slider-container" href="#inTheaterItemLast" aria-label="right slider"><i class="fa-solid fa-angle-right"></i></a>
+                </div>
             </section>
             <section class="top-ten-container" id="topTen">
                 <div class="top-ten-header">
@@ -253,7 +269,7 @@
                     </div>
                 </div>
                 <div class="top-ten-body">
-                    <div class="item-container">
+                    <div class="item-container" id="topTenItemFirst">
                         <img class="item-img"
                             src="https://m.media-amazon.com/images/M/MV5BNDRjYTA2MzgtYWI3My00YmFjLTk1MjgtYTkwZDkyMzg1OWVjXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
                             alt="Ipar Adalah Maut Poster">
@@ -313,7 +329,7 @@
                             <p class="trailer-text">Trailer</p>
                         </div>
                     </div>
-                    <div class="item-container">
+                    <div class="item-container" id="topTenItemMiddle">
                         <img class="item-img"
                             src="./assets/poster-haikyuu.jpg"
                             alt="Haikyuu!! The Dumpster Battle Poster">
@@ -373,6 +389,31 @@
                             <p class="trailer-text">Trailer</p>
                         </div>
                     </div>
+                    <div class="item-container" id="topTenItemLast">
+                        <img class="item-img"
+                            src="https://m.media-amazon.com/images/M/MV5BMjA5Yjg1YTQtYzA5ZS00ZWNjLTkwNjYtOTE5MzQwZDM4YmIwXkEyXkFqcGdeQXVyMTEzMTI1Mjk3._V1_FMjpg_UX1000_.jpg"
+                            alt="Shin Jigen! Crayon Shin-can The Movie Poster">
+                        <div class="item-text-content">
+                            <h3 class="item-title">Shin Jigen! Crayon Shin-can The Movie</h3>
+                            <div class="rating-container">
+                                <i class="fa-solid fa-star"></i>
+                                <p class="rating-text">6.5</p>
+                            </div>
+                        </div>
+                        <div class="add-watchlist-container">
+                            <i class="fa-solid fa-plus"></i>
+                            <p class="add-watchlist-text">Watchlist</p>
+                        </div>
+                        <div class="trailer-container">
+                            <i class="fa-solid fa-play"></i>
+                            <p class="trailer-text">Trailer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="top-ten-slider slider">
+                    <a class="slider-container" href="#topTenItemFirst" aria-label="left slider"><i class="fa-solid fa-angle-left"></i></a>
+                    <a class="slider-middle" href="#topTenItemMiddle" aria-label="middle slider"><div class="circle-slider"></div></a>
+                    <a class="slider-container" href="#topTenItemLast" aria-label="right slider"><i class="fa-solid fa-angle-right"></i></a>
                 </div>
             </section>
             <section class="popular-celebrities-container" id="popularCelebrities">
@@ -385,7 +426,7 @@
                     </div>
                 </div>
                 <div class="popular-celebrities-body">
-                    <div class="celebrity-item">
+                    <div class="celebrity-item" id="celebItemFirst">
                         <img class="celebrity-img" src="https://m.media-amazon.com/images/M/MV5BZWIzMDVkYWUtYTA3My00MzIwLWJhY2MtNWNlODA3NWQyYmI4XkEyXkFqcGdeQXVyMTI2Nzk2ODk3._V1_.jpg" alt="Andria Arjona">
                         <h3 class="celebrity-name">Andria Arjona</h3>
                     </div>
@@ -397,7 +438,7 @@
                         <img class="celebrity-img" src="https://ell.h-cdn.co/assets/16/17/3200x2133/gallery-1461617059-gettyimages-507244236.jpg" alt="Amandla Stenberg">
                         <h3 class="celebrity-name">Amandla Stenberg</h3>
                     </div>
-                    <div class="celebrity-item">
+                    <div class="celebrity-item" id="celebItemMiddle">
                         <img class="celebrity-img" src="https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/255119_v9_bc.jpg" alt="Laz Alonso">
                         <h3 class="celebrity-name">Laz Alonso</h3>
                     </div>
@@ -405,10 +446,15 @@
                         <img class="celebrity-img" src="https://m.media-amazon.com/images/M/MV5BMGEzMTIwM2UtYjc5MC00ZGI4LWJiOTAtYzAwZmU0OTYzYWIxXkEyXkFqcGdeQXVyNDg0MzQyNA@@._V1_.jpg" alt="Glen Powell">
                         <h3 class="celebrity-name">Glen Powell</h3>
                     </div>
-                    <div class="celebrity-item">
+                    <div class="celebrity-item" id="celebItemLast">
                         <img class="celebrity-img" src="./assets/foto-coughlan.jpeg" alt="Nicola Coughlan">
                         <h3 class="celebrity-name">Nicola Coughlan</h3>
                     </div>
+                </div>
+                <div class="popular-celebrities-slider slider">
+                    <a class="slider-container" href="#celebItemFirst" aria-label="left slider"><i class="fa-solid fa-angle-left"></i></a>
+                    <a class="slider-middle" href="#celebItemMiddle" aria-label="middle slider"><div class="circle-slider"></div></a>
+                    <a class="slider-container" href="#celebItemLast" aria-label="right slider"><i class="fa-solid fa-angle-right"></i></a>
                 </div>
             </section>
         </article>
