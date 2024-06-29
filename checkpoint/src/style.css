@@ -1,3 +1,13 @@
+@font-face {
+  font-family: 'Bevan';
+  src: url(./assets/font/Bevan-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url(./assets/font/open-sans/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+
 *,
 *::before,
 *::after {
