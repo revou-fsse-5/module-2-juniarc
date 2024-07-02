@@ -1,3 +1,6 @@
+const IS_DARK_MODE = 'isDarkMode';
+const DARK_THEME_CLASS = 'dark-theme'
+
 const burgerBtn =  document.querySelector('#burgerBtn');
 const headerNav = document.querySelector('#headerNavigation');
 const closeBtn = document.querySelector('#closeBtn');
@@ -6,6 +9,7 @@ const searchNav = document.querySelector('#searchNav');
 const signupModal = document.querySelector('#modalSignupForm');
 const signupBtn = document.querySelector('#signupBtn');
 const closeFormBtn = document.querySelector('#closeFormBtn');
+const themeBtn = document.querySelector('#themeBtn');
 
 burgerBtn.addEventListener('click', () => {
     if (searchNav.classList.contains('open')){
@@ -32,3 +36,22 @@ signupBtn.addEventListener('click', () => {
 closeFormBtn.addEventListener('click', () => {
     signupModal.style.display = 'none';
 });
+
+/* Mode Configuration */
+
+themeBtn.addEventListener('click', () => {
+    if(document.body.classList.contains(DARK_THEME_CLASS)) {
+        document.body.classList.remove(DARK_THEME_CLASS);
+        localStorage.setItem(IS_DARK_MODE, false);
+    } else {
+        document.body.classList.add(DARK_THEME_CLASS);
+        localStorage.setItem(IS_DARK_MODE, true)
+    }
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    const getModeFromStorage = localStorage.getItem(IS_DARK_MODE);
+    if (getModeFromStorage === 'true') {
+        document.body.classList.add(DARK_THEME_CLASS);
+    }
+})

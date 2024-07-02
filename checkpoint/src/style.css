@@ -1007,8 +1007,8 @@ footer .social-media-container a:hover {
 
 .footer-bottom .theme-btn {
   background-color: transparent;
-  color: var(--text-color);
-  border: 1px solid var(--stroke-color);
+  color: white;
+  border: 1px solid white;
   border-radius: 10px;
   cursor: pointer;
   font-weight: 700;
