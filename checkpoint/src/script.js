@@ -54,4 +54,4 @@ document.addEventListener('DOMContentLoaded', () => {
     if (getModeFromStorage === 'true') {
         document.body.classList.add(DARK_THEME_CLASS);
     }
-})
+});
