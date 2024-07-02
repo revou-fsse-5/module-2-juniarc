@@ -23,13 +23,13 @@
 .dark-theme {
   --primary-color: #191919;
   --secondary-color: #191919;
-  --tertiary-color: #C73659;
+  --tertiary-color: #A91D3A;
   --stroke-color: white;
   --shadow-color: white;
   --text-color: white;
-  --title-text-color: #F5C518;
-  --blue-layer-color: #C73659;
-  --red-text-color: #C73659;
+  --title-text-color: #F7CF40;
+  --blue-layer-color: #A91D3A;
+  --red-text-color: #D9738B;
 }
 
 *,
