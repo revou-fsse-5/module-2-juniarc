@@ -39,6 +39,15 @@ closeFormBtn.addEventListener('click', () => {
 
 /* Mode Configuration */
 
+// Check avaibility localStorage
+function isStorageExist() {
+    if (typeof (Storage) === undefined ){
+        alert('Your browser did not support local storage');
+        return false;
+    }
+    return true;
+}
+
 themeBtn.addEventListener('click', () => {
     if(document.body.classList.contains(DARK_THEME_CLASS)) {
         document.body.classList.remove(DARK_THEME_CLASS);
@@ -50,8 +59,10 @@ themeBtn.addEventListener('click', () => {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-    const getModeFromStorage = localStorage.getItem(IS_DARK_MODE);
+    if(isStorageExist()) {
+        const getModeFromStorage = localStorage.getItem(IS_DARK_MODE);
     if (getModeFromStorage === 'true') {
         document.body.classList.add(DARK_THEME_CLASS);
+    }
     }
 });
