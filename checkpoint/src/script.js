@@ -59,10 +59,10 @@ themeBtn.addEventListener('click', () => {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-    if(isStorageExist()) {
+    if (isStorageExist()) {
         const getModeFromStorage = localStorage.getItem(IS_DARK_MODE);
-    if (getModeFromStorage === 'true') {
-        document.body.classList.add(DARK_THEME_CLASS);
-    }
+        if (getModeFromStorage === 'true') {
+            document.body.classList.add(DARK_THEME_CLASS);
+        }
     }
 });
